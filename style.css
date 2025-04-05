@@ -1,0 +1,40 @@
+body {
+  font-family: "微软雅黑", sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(36, 20px);
+  gap: 2px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border: 1px solid #999;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.revealed {
+  background-color: #eee;
+  cursor: default;
+}
+
+.cell.flag {
+  background-color: #ffd700;
+}
+
+#status {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+}
